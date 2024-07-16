@@ -1,0 +1,431 @@
+/* all */
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F6F5F2;
+    width: 375px;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 30px;
+line-height: 120%;
+text-transform: uppercase;
+color: #2b3f5b;
+margin-bottom: 20px;
+}
+
+.text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #2b3f5b;
+}
+
+/* header */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.logoIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.list__links {
+    display: none;
+}
+.list__info {
+    display: none;
+}
+
+/* hero */
+
+.block__info__hero {
+    margin-bottom: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.block__image__hero {
+    position: relative;
+    display: flex;
+}
+
+.img__hero {
+    width: 100%;
+    height: 100%;
+}
+
+.svg__hero {
+    top: 120px;
+    left: 100px;
+    position: absolute;
+    z-index: 999;
+    width: 275px;
+    height: 290px;
+    border-radius: 300px 300px 0 0;
+    fill: rgba(241, 239, 233, 0.1);
+backdrop-filter: blur(5px);
+}
+
+/* promotional Packages */
+
+.promotionalPackages {
+    margin-bottom: 80px;
+}
+
+.list__promotionalPackages {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.item__promotionalPackages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(204, 142, 30, 0.27);
+padding: 24px;
+width: 320px;
+background: #fff;
+}
+
+.subtitle__promotionalPackages {
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 24px;
+line-height: 133%;
+color: #cc8e1e;
+}
+
+.btn__promotionalPackages {
+    border: 0.50px solid #cc8e1e;
+border-radius: 50px;
+padding: 12px 20px;
+width: 320px;
+height: 50px;
+background: rgba(204, 142, 30, 0.1);
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #cc8e1e;
+}
+
+/* promotional Offers */
+
+.promotionalOffers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.block__promotionalOffers__sale {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img__promotionalOffers {
+    width: 100%;
+}
+
+.subtitle__promotionalOffers {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    color: #000;
+}
+
+.btn__promotionalOffers {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #cc8e1e;
+}
+
+.form__promotionalOffers {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(204, 142, 30, 0.27);
+padding: 26px;
+width: 300px;
+}
+
+.block__input__promotionalOffers {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.input__promotionalOffers {
+    border: 1px solid rgba(204, 142, 30, 0.6);
+    border-radius: 10px;
+    padding: 8px 16px;
+    width: 260px;
+}
+
+.text__promotionalOffers {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #2b3f5b;
+}
+
+.label__checkbox__promotionalOffers {
+    margin-bottom: 16px;
+}
+
+.btn__promotionalOffers {
+    border-radius: 50px;
+padding: 15px 20px;
+width: 300px;
+background: #cc8e1e;
+border: transparent;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 120%;
+color: #fff;
+}
+
+/* price */
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.table__price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;    
+    width: 340px;
+    margin-bottom: 20px;
+}
+
+.thead__price {
+    background: #faf4e8;
+}
+
+.tr__price {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0px;
+    background: #faf4e8;
+}
+
+.tbody__price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title__table__price {
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 125%;
+text-align: center;
+color: #2b3f5b;
+}
+
+.text__table__price {
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 133%;
+text-align: center;
+color: #000;
+}
+
+/* logoText */
+
+.logoText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.svg__logoText {
+    width: 80px;
+    height: 60px;
+}
+
+.text__logoText {
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+color: #000;
+}
+
+.twój__logoText {
+    position: absolute;
+    top: 20px;
+    z-index: 999;
+    color: #cc8e1e;
+}
+
+.stanuZdrowia__logoText {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    z-index: 999;
+    color: #cc8e1e;
+}
+
+/* contactBlock */
+
+.contactBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    background: #fff;
+}
+
+.block__info__contactBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subtitle__info__contactBlock {
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+color: #2b3f5b;
+}
+
+.list__contactBlock {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.block__visa__footer {
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.text__footer {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #2b3f5b;
+}
+
+.visa__footer {
+    display: flex;
+}
+
+.span__logoVisa__footer {
+    top: 70px;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.span__visa__footer {
+    top: 75px;
+    left: 40px;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.block__link__footer {
+    margin: 0 auto;
+}
+
+.list__link__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.link__footer {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #cc8e1e;
+}
+
+.block__location__footer {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+}
+
+.location__link__footer {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: #2b3f5b;
+}
+
+.list__socialLink_footer {
+    display: flex;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .list__links {
+        display: flex;
+    }
+    .list__info {
+        display: flex;
+    }
+}
