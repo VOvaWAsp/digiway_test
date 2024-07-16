@@ -1,0 +1,6 @@
+{
+"homepage": "https://VOvaWAsp.github.io/digiway_test/",
+"scripts": {
+  "build": "parcel build src/*.html --public-url /digiway_test/"
+}
+}
