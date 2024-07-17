@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="nav__header">
             <span>
                 <svg class="logoIcon">
                     <use href="./src/images/sprite.svg#icon-Logo"></use>
@@ -16,60 +16,50 @@
             </span>
             <ul class="list__links">
                 <li>
-                    <a href="" alt="Nasi lekarze">Nasi lekarze</a>
+                    <a class="link__header" href="" alt="Nasi lekarze">Nasi lekarze</a>
                 </li>
                 <li>
-                    <a href="" alt="Kontakt">Kontakt</a>
+                    <a class="link__header" href="" alt="Kontakt">Kontakt</a>
                 </li>
                 <li>
-                    <a href="" alt="Programs">Programs 
-                        <span>
-                            <svg>
+                    <a class="link__header" href="" alt="Programs">Programs 
+                            <svg width="8" height="6">
                                 <use href="./src/images/sprite.svg#icon-arrow"></use>
                             </svg>
-                        </span>
                     </a>
                 </li>
                 <li>
-                    <a href="" alt="O nas">O nas
-                        <span>
-                            <svg>
+                    <a class="link__header" href="" alt="O nas">O nas
+                            <svg width="8" height="6">
                                 <use href="./src/images/sprite.svg#icon-arrow"></use>
                             </svg>
-                        </span>
                     </a>
                 </li>
             </ul>
             <ul class="list__info">
-                <li>
-                    <span>
-                        <svg>
+                <li class="info__user__header">
+                        <svg width="16" height="18">
                             <use href="./src/images/sprite.svg#icon-Avatar"></use>
                         </svg>
-                    </span>
+                </li>
+                <li class="block__contactWithUs__header">
+                    <a class="contactWithUs__header" href="" alt="Skontaktuj się z nami">Skontaktuj się z nami</a>
                 </li>
                 <li>
-                    <a href="" alt="Skontaktuj się z nami">Skontaktuj się z nami</a>
-                </li>
-                <li>
-                    <button>PL
-                        <span>
-                            <svg>
+                    <button type="button" class="language__change__header">PL
+                            <svg width="8" height="6">
                                 <use href="./src/images/sprite.svg#icon-arrow"></use>
                             </svg>
-                        </span>
                     </button>
                 </li>
-                <li>
-                    <button>
-                        <svg>
-                            <use href="./src/images/sprite.svg#icon-Sun"></use>
+                <li class="theme__change__item__header">
+                    <button type="button" class="sun">
+                        <svg width="14" height="15">
+                            <use fill="fff" href="./src/images/sprite.svg#icon-Sun"></use>
                         </svg>
                     </button>
-                </li>
-                <li>
-                    <button>
-                        <svg>
+                    <button type="button" class="moon">
+                        <svg width="11" height="12">
                             <use href="./src/images/sprite.svg#icon-Moon"></use>
                         </svg>
                     </button>
@@ -94,7 +84,7 @@
         <ul class="list__promotionalPackages">
             <li class="item__promotionalPackages">
                 <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
-                <p class="text">УЗД всього організму для жінок
+                <p class="text__promotionalPackages">УЗД всього організму для жінок
                     Щитовидна залоза
                     Молочні залози
                     Органи черевної порожнини ( печінка, жовчний міхур,
@@ -108,7 +98,7 @@
             </li>
             <li class="item__promotionalPackages">
                 <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
-                <p class="text">УЗД всього організму для жінок
+                <p class="text__promotionalPackages">УЗД всього організму для жінок
                     Щитовидна залоза
                     Молочні залози
                     Органи черевної порожнини ( печінка, жовчний міхур,
@@ -122,7 +112,7 @@
             </li>
             <li class="item__promotionalPackages">
                 <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
-                <p class="text">УЗД всього організму для жінок
+                <p class="text__promotionalPackages">УЗД всього організму для жінок
                     Щитовидна залоза
                     Молочні залози
                     Органи черевної порожнини ( печінка, жовчний міхур,
@@ -138,31 +128,33 @@
     </section>
     <section class="promotionalOffers">
         <h2 class="title">АКЦІЙНІ ПРОПОЗИЦІЇ</h2>
-            <div class="block__promotionalOffers__sale">
-                <img class="img__promotionalOffers" src="./src/images/promotionalOffers/x-rayAndWoman.png" alt="x-ray and woman">
-                <h3 class="subtitle__promotionalOffers">Акція "-40% на пробне заняття з кінезітерапії"</h3>
-                <p class="text">Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною пропозицією вартістю 680 408 грн.</p>
-                <button type="button" class="btn__promotionalOffers">Переглянути детальніше</button>
+            <div class="block__promotionalOffers">
+                <div class="block__promotionalOffers__sale">
+                    <img class="img__promotionalOffers" src="./src/images/promotionalOffers/x-rayAndWoman.png" alt="x-ray and woman">
+                    <h3 class="subtitle__promotionalOffers">Акція "-40% на пробне заняття з кінезітерапії"</h3>
+                    <p class="text">Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною пропозицією вартістю 680 408 грн.</p>
+                    <button type="button" class="btn__promotionalOffers">Переглянути детальніше</button>
+                </div>
+                    <form class="form__promotionalOffers">
+                        <h2 class="title__promotionalOffers">Czekamy na Ciebie!</h2>
+                        <div class="block__input__promotionalOffers">
+                            <label for="name"></label>
+                        <input class="input__promotionalOffers" type="text" name="name" id="name">
+                        <label for="phone"></label>
+                        <input class="input__promotionalOffers" type="phone" name="phone" id="phone">
+                        <label for="email"></label>
+                        <input class="input__promotionalOffers" type="email" name="email" id="email">
+                        </div>
+                        <label class="label__checkbox__promotionalOffers" for="security">
+                            <input type="checkbox" name="security" id="security">
+                            <p class="text__promotionalOffers">Wypełnienie formularza zgłoszeniowego jest równoznaczne
+                               z wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie 
+                               newslettera, oraz kontakt telefoniczny
+                            </p>
+                        </label>
+                        <button type="submit" class="btn__promotionalOffers">Wyślij</button>
+                    </form>
             </div>
-                <form class="form__promotionalOffers">
-                    <h2 class="title">Czekamy na Ciebie!</h2>
-                    <div class="block__input__promotionalOffers">
-                        <label for="name"></label>
-                    <input class="input__promotionalOffers" type="text" name="name" id="name">
-                    <label for="phone"></label>
-                    <input class="input__promotionalOffers" type="phone" name="phone" id="phone">
-                    <label for="email"></label>
-                    <input class="input__promotionalOffers" type="email" name="email" id="email">
-                    </div>
-                    <label class="label__checkbox__promotionalOffers" for="security">
-                        <input type="checkbox" name="security" id="security">
-                        <p class="text__promotionalOffers">Wypełnienie formularza zgłoszeniowego jest równoznaczne
-                           z wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie 
-                           newslettera, oraz kontakt telefoniczny
-                        </p>
-                    </label>
-                    <button type="submit" class="btn__promotionalOffers">Wyślij</button>
-                </form>
     </section>
     <section class="price">
         <h2 class="title">ПРАЙС-ЛИСТ</h2>
@@ -176,22 +168,22 @@
                 </tr>
             </thead>
             <tbody class="tbody__price">
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Konsultacja anestezjologiczna</td>
                     <td class="text__table__price">280 zł</td>
                 </tr>
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Telekonsultacja anestezjologiczna</td>
                     <td class="text__table__price">190 zł</td>
                 </tr>
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Konsultacja anestezjologiczna</td>
                     <td class="text__table__price">280 zł</td>
                 </tr>
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Konsultacja anestezjologiczna</td>
                     <td class="text__table__price">280 zł</td>
@@ -207,22 +199,22 @@
                 </tr>
             </thead>
             <tbody class="tbody__price">
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Konsultacja anestezjologiczna</td>
                     <td class="text__table__price">280 zł</td>
                 </tr>
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Telekonsultacja anestezjologiczna</td>
                     <td class="text__table__price">190 zł</td>
                 </tr>
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Konsultacja anestezjologiczna</td>
                     <td class="text__table__price">280 zł</td>
                 </tr>
-                <tr class="tr__price">
+                <tr class="tr__price__body">
                     <td class="text__table__price">89.000</td>
                     <td class="text__table__price">Konsultacja anestezjologiczna</td>
                     <td class="text__table__price">280 zł</td>
