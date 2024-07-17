@@ -16,24 +16,42 @@
             </span>
             <ul class="list__links">
                 <li>
-                    <a class="link__header" href="" alt="Nasi lekarze">Nasi lekarze</a>
+                    <a class="link__header" href="./index.html" alt="Nasi lekarze">Nasi lekarze</a>
                 </li>
                 <li>
-                    <a class="link__header" href="" alt="Kontakt">Kontakt</a>
+                    <a class="link__header" href="#Kontakt" alt="Kontakt">Kontakt</a>
                 </li>
                 <li>
-                    <a class="link__header" href="" alt="Programs">Programs 
+                    <div class="dropdown">
+                        <div class="select"></div>
+                        <span class="link__header selected">Programs 
                             <svg width="8" height="6">
                                 <use href="./src/images/sprite.svg#icon-arrow"></use>
                             </svg>
-                    </a>
-                </li>
+                        </span>
+                        <ul class="menu">
+                            <li>Health</li>
+                            <li>Medical</li>
+                            <li>Rehabilitation</li>
+                            <li class="active">Programs</li>
+                        </ul>
+                    </div>
+                </li>                
                 <li>
-                    <a class="link__header" href="" alt="O nas">O nas
+                    <div class="dropdown">
+                        <div class="select"></div>
+                        <span class="link__header selected">O nas 
                             <svg width="8" height="6">
                                 <use href="./src/images/sprite.svg#icon-arrow"></use>
                             </svg>
-                    </a>
+                        </span>
+                        <ul class="menu">
+                            <li>+48 00 000 00 00</li>
+                            <li>Warsaw</li>
+                            <li>street center</li>
+                            <li class="active">Programs</li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
             <ul class="list__info">
@@ -43,13 +61,14 @@
                         </svg>
                 </li>
                 <li class="block__contactWithUs__header">
-                    <a class="contactWithUs__header" href="" alt="Skontaktuj się z nami">Skontaktuj się z nami</a>
+                    <a class="contactWithUs__header" href="#Form" alt="Skontaktuj się z nami">Skontaktuj się z nami</a>
                 </li>
                 <li>
-                    <button type="button" class="language__change__header">PL
-                            <svg width="8" height="6">
-                                <use href="./src/images/sprite.svg#icon-arrow"></use>
-                            </svg>
+                    <button type="button" class="language__change__header">
+                        <select class="select__header" name="language">
+                            <option value="Pl">Pl</option>
+                            <option disabled value="En">En</option>
+                        </select>
                     </button>
                 </li>
                 <li class="theme__change__item__header">
@@ -66,8 +85,83 @@
                 </li>
             </ul>
         </nav>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
     </header>
-    <section class="hero">
+    <nav class="mobile-nav">
+        <ul class="list__mobile__header__link">
+            <li>
+                <a class="link__header" href="./index.html" alt="Nasi lekarze">Nasi lekarze</a>
+            </li>
+            <li>
+                <a class="link__header" href="#Kontakt" alt="Kontakt">Kontakt</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <div class="select"></div>
+                    <span class="link__header selected">Programs 
+                        <svg width="8" height="6">
+                            <use href="./src/images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+                    <ul class="menu">
+                        <li>Health</li>
+                        <li>Medical</li>
+                        <li>Rehabilitation</li>
+                        <li class="active">Programs</li>
+                    </ul>
+                </div>
+            </li>                
+            <li>
+                <div class="dropdown">
+                    <div class="select"></div>
+                    <span class="link__header selected">O nas 
+                        <svg width="8" height="6">
+                            <use href="./src/images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+                    <ul class="menu">
+                        <li>+48 00 000 00 00</li>
+                        <li>Warsaw</li>
+                        <li>street center</li>
+                        <li class="active">Programs</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <ul class="list__mobile__header__info">
+            <li class="info__user__header">
+                    <svg width="16" height="18">
+                        <use href="./src/images/sprite.svg#icon-Avatar"></use>
+                    </svg>
+            </li>
+            <li class="block__contactWithUs__header">
+                <a class="contactWithUs__header" href="#Form" alt="Skontaktuj się z nami">Skontaktuj się z nami</a>
+            </li>
+            <li>
+                <button type="button" class="language__change__header">
+                    <select class="select__header" name="language">
+                        <option value="Pl">Pl</option>
+                        <option disabled value="En">En</option>
+                    </select>
+                </button>
+            </li>
+            <li class="theme__change__item__header">
+                <button type="button" class="sun">
+                    <svg width="14" height="15">
+                        <use fill="fff" href="./src/images/sprite.svg#icon-Sun"></use>
+                    </svg>
+                </button>
+                <button type="button" class="moon">
+                    <svg width="11" height="12">
+                        <use href="./src/images/sprite.svg#icon-Moon"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <section id="Onas" class="hero">
             <div class="block__info__hero">
                 <h2 class="title">AКЦІЇ ТА АКЦІЙНІ ПАКЕТИ</h2>
                 <p class="text">Ми завжди прагнемо підвищити рівень сервісу надаваних медичних послуг, і вдячні вам за залишений позитивний відгук. Ми беремо до уваги всі коментарі та побажання, які відносяться до нашої роботи. Дякуємо за ваш вибір.</p>
@@ -79,7 +173,7 @@
                     </svg>
             </div>
     </section>
-    <section class="promotionalPackages">
+    <section id="Usługi" class="promotionalPackages">
         <h2 class="title">ПАКЕТИ</h2>
         <ul class="list__promotionalPackages">
             <li class="item__promotionalPackages">
@@ -94,7 +188,7 @@
                     Ціна — 2600 грн. 
                     Ціна по акції — 1280 грн
                 </p>
-                <button type="button" class="btn__promotionalPackages">Переглянути детальніше</button>
+                <button type="button" class="btn__promotionalPackages" data-package="1">Переглянути детальніше</button>
             </li>
             <li class="item__promotionalPackages">
                 <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
@@ -108,7 +202,7 @@
                     Ціна — 2600 грн. 
                     Ціна по акції — 1280 грн
                 </p>
-                <button type="button" class="btn__promotionalPackages">Переглянути детальніше</button>
+                <button type="button" class="btn__promotionalPackages" data-package="2">Переглянути детальніше</button>
             </li>
             <li class="item__promotionalPackages">
                 <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
@@ -122,41 +216,129 @@
                     Ціна — 2600 грн. 
                     Ціна по акції — 1280 грн
                 </p>
-                <button type="button" class="btn__promotionalPackages">Переглянути детальніше</button>
+                <button type="button" class="btn__promotionalPackages" data-package="3">Переглянути детальніше</button>
             </li>
         </ul>
     </section>
-    <section class="promotionalOffers">
+    <div class="modal" id="modal1">
+        <div class="modal-inner">
+            <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
+            <p class="text__promotionalPackages">УЗД всього організму для жінок
+                Щитовидна залоза
+                Молочні залози
+                Органи черевної порожнини ( печінка, жовчний міхур,
+                підшлункова залоза, селезінка)
+                Нирки та наднирокові залози
+                Органи малого тазу
+                Ціна — 2600 грн. 
+                Ціна по акції — 1280 грн
+            </p>
+            <button class="btn__promotionalPackages closeModal">Close</button>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-inner">
+            <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
+            <p class="text__promotionalPackages">УЗД всього організму для жінок
+                Щитовидна залоза
+                Молочні залози
+                Органи черевної порожнини ( печінка, жовчний міхур,
+                підшлункова залоза, селезінка)
+                Нирки та наднирокові залози
+                Органи малого тазу
+                Ціна — 2600 грн. 
+                Ціна по акції — 1280 грн
+            </p>
+            <button class="btn__promotionalPackages closeModal">Close</button>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-inner">
+            <h3 class="subtitle__promotionalPackages">УЗД всього організму для жінок</h3>
+            <p class="text__promotionalPackages">УЗД всього організму для жінок
+                Щитовидна залоза
+                Молочні залози
+                Органи черевної порожнини ( печінка, жовчний міхур,
+                підшлункова залоза, селезінка)
+                Нирки та наднирокові залози
+                Органи малого тазу
+                Ціна — 2600 грн. 
+                Ціна по акції — 1280 грн
+            </p>
+            <button class="btn__promotionalPackages closeModal">Close</button>
+        </div>
+    </div>
+    <section id="Praca" class="promotionalOffers">
         <h2 class="title">АКЦІЙНІ ПРОПОЗИЦІЇ</h2>
             <div class="block__promotionalOffers">
                 <div class="block__promotionalOffers__sale">
-                    <img class="img__promotionalOffers" src="./src/images/promotionalOffers/x-rayAndWoman.png" alt="x-ray and woman">
+                    <div class="block__img__promotionalOffers">
+                    <button class="swiper-btn-prev">
+                        <svg width="15" height="17">
+                            <use href="./src/images/sprite.svg#icon-prev-arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="img__promotionalOffers" src="./src/images/promotionalOffers/x-rayAndWoman.png" alt="x-ray and woman">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img__promotionalOffers" src="./src/images/promotionalOffers/farma-medical-writer.png" alt="x-ray and woman">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img__promotionalOffers" src="./src/images/promotionalOffers/medical.jpg" alt="x-ray and woman">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="swiper-btn-next">
+                        <svg width="15" height="17">
+                            <use href="./src/images/sprite.svg#icon-next-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
                     <h3 class="subtitle__promotionalOffers">Акція "-40% на пробне заняття з кінезітерапії"</h3>
                     <p class="text">Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною пропозицією вартістю 680 408 грн.</p>
-                    <button type="button" class="btn__promotionalOffers">Переглянути детальніше</button>
+                    <button type="button" class="btn__promotionalOffers btn__promotionalPackages" data-package="4" >Переглянути детальніше</button>
                 </div>
-                    <form class="form__promotionalOffers">
+                    <form id="Form" class="form__promotionalOffers">
                         <h2 class="title__promotionalOffers">Czekamy na Ciebie!</h2>
                         <div class="block__input__promotionalOffers">
-                            <label for="name"></label>
-                        <input class="input__promotionalOffers" type="text" name="name" id="name">
-                        <label for="phone"></label>
-                        <input class="input__promotionalOffers" type="phone" name="phone" id="phone">
-                        <label for="email"></label>
-                        <input class="input__promotionalOffers" type="email" name="email" id="email">
+                            <div class="name__div">
+                            <label class="label__promotionalOffers name" for="name">Imię i nazwisko</label>
+                        <input class="input__promotionalOffers" type="text" name="name" id="name" placeholder="Agnieszka Kowalczyk">
                         </div>
-                        <label class="label__checkbox__promotionalOffers" for="security">
-                            <input type="checkbox" name="security" id="security">
+                        <div class="phone__div">
+                        <label class="label__promotionalOffers phone" for="phone">Phone</label>
+                        <input class="input__promotionalOffers" type="phone" name="phone" id="phone" placeholder="+48 XXX XXX XXX">
+                    </div>
+                    <div class="email__div">
+                        <label class="label__promotionalOffers email" for="email">E-mail</label>
+                        <input class="input__promotionalOffers" type="email" name="email" id="email" placeholder="name@gmail.com">
+                    </div>
+                        </div>
+                        <div class="select__promotionalOffers">
+                            <input class="security" type="checkbox" name="security" id="security">
+                            <label class="label__checkbox__promotionalOffers" for="security">
+                                <span></span>
+                            </label>
                             <p class="text__promotionalOffers">Wypełnienie formularza zgłoszeniowego jest równoznaczne
-                               z wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie 
-                               newslettera, oraz kontakt telefoniczny
-                            </p>
-                        </label>
+                                z wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie 
+                                newslettera, oraz kontakt telefoniczny
+                             </p>
+                        </div>
                         <button type="submit" class="btn__promotionalOffers">Wyślij</button>
                     </form>
             </div>
     </section>
-    <section class="price">
+    <div class="modal" id="modal4">
+        <div class="modal-inner">
+            <h3 class="subtitle__promotionalOffers">Акція "-40% на пробне заняття з кінезітерапії"</h3>
+                    <p class="text">Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною пропозицією вартістю 680 408 грн.</p>
+            <button class="btn__promotionalPackages closeModal">Close</button>
+        </div>
+    </div>
+    <section id="Cennik" class="price">
         <h2 class="title">ПРАЙС-ЛИСТ</h2>
         <div class="block__price">
         <table class="table__price">
@@ -237,7 +419,7 @@
             </span>
         </p>
     </section>
-    <section class="contactBlock">
+    <section id="Kontakt" class="contactBlock">
         <div class="block__info__contactBlock">
                 <p class="text">W razie jakichkolwiek pytań, zadzwoń</p>
                 <h3 class="subtitle__info__contactBlock">+48 00 000 00 00</h3>
@@ -303,19 +485,19 @@
         <div class="block__link__footer">
             <ul class="list__link__footer">
                 <li>
-                    <a class="link__footer" href="O nas">O nas</a>
+                    <a class="link__footer" href="#Onas">O nas</a>
                 </li>
                 <li>
-                    <a class="link__footer" href="Usługi">Usługi</a>
+                    <a class="link__footer" href="#Usługi">Usługi</a>
                 </li>
                 <li>
-                    <a class="link__footer" href="Blog">Blog</a>
+                    <a class="link__footer" href="./blog.html">Blog</a>
                 </li>
                 <li>
-                    <a class="link__footer" href="Praca">Praca</a>
+                    <a class="link__footer" href="#Praca">Praca</a>
                 </li>
                 <li>
-                    <a class="link__footer" href="Cennik">Cennik</a>
+                    <a class="link__footer" href="#Cennik">Cennik</a>
                 </li>
             </ul>
             <div class="block__location__footer">
@@ -373,5 +555,9 @@
             </ul>
         </div>
     </footer>
+    <script src="./src/js/mobile-menu.js"></script>
+    <script src="./src/js/dropdown.js"></script>
+    <script src="./src/js/modalWindow.js"></script>
+    <script src="./src/js/swiper.js"></script>
 </body>
 </html>

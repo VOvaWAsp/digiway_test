@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/blog.css">
+    <title>Test</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav__header">
+            <span>
+                <svg class="logoIcon">
+                    <use href="./src/images/sprite.svg#icon-Logo"></use>
+                </svg>
+            </span>
+            <ul class="list__links">
+                <li>
+                    <a class="link__header" href="./index.html" alt="Nasi lekarze">Nasi lekarze</a>
+                </li>
+                <li>
+                    <a class="link__header" href="./index.html" alt="Kontakt">Kontakt</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="select"></div>
+                        <span class="link__header selected">Programs 
+                            <svg width="8" height="6">
+                                <use href="./src/images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                        <ul class="menu">
+                            <li>Health</li>
+                            <li>Medical</li>
+                            <li>Rehabilitation</li>
+                            <li class="active">Programs</li>
+                        </ul>
+                    </div>
+                </li>                
+                <li>
+                    <div class="dropdown">
+                        <div class="select"></div>
+                        <span class="link__header selected">O nas 
+                            <svg width="8" height="6">
+                                <use href="./src/images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                        <ul class="menu">
+                            <li>+48 00 000 00 00</li>
+                            <li>Warsaw</li>
+                            <li>street center</li>
+                            <li class="active">Programs</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list__info">
+                <li class="info__user__header">
+                        <svg width="16" height="18">
+                            <use href="./src/images/sprite.svg#icon-Avatar"></use>
+                        </svg>
+                </li>
+                <li class="block__contactWithUs__header">
+                    <a class="contactWithUs__header" href="./index.html" alt="Skontaktuj się z nami">Skontaktuj się z nami</a>
+                </li>
+                <li>
+                    <button type="button" class="language__change__header">
+                        <select class="select__header" name="language">
+                            <option value="Pl">Pl</option>
+                            <option disabled value="En">En</option>
+                        </select>
+                    </button>
+                </li>
+                <li class="theme__change__item__header">
+                    <button type="button" class="sun">
+                        <svg width="14" height="15">
+                            <use fill="fff" href="./src/images/sprite.svg#icon-Sun"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="moon">
+                        <svg width="11" height="12">
+                            <use href="./src/images/sprite.svg#icon-Moon"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="list__mobile__header__link">
+            <li>
+                <a class="link__header" href="./index.html" alt="Nasi lekarze">Nasi lekarze</a>
+            </li>
+            <li>
+                <a class="link__header" href="./index.html" alt="Kontakt">Kontakt</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <div class="select"></div>
+                    <span class="link__header selected">Programs 
+                        <svg width="8" height="6">
+                            <use href="./src/images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+                    <ul class="menu">
+                        <li>Health</li>
+                        <li>Medical</li>
+                        <li>Rehabilitation</li>
+                        <li class="active">Programs</li>
+                    </ul>
+                </div>
+            </li>                
+            <li>
+                <div class="dropdown">
+                    <div class="select"></div>
+                    <span class="link__header selected">O nas 
+                        <svg width="8" height="6">
+                            <use href="./src/images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+                    <ul class="menu">
+                        <li>+48 00 000 00 00</li>
+                        <li>Warsaw</li>
+                        <li>street center</li>
+                        <li class="active">Programs</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <ul class="list__mobile__header__info">
+            <li class="info__user__header">
+                    <svg width="16" height="18">
+                        <use href="./src/images/sprite.svg#icon-Avatar"></use>
+                    </svg>
+            </li>
+            <li class="block__contactWithUs__header">
+                <a class="contactWithUs__header" href="./index.html" alt="Skontaktuj się z nami">Skontaktuj się z nami</a>
+            </li>
+            <li>
+                <button type="button" class="language__change__header">
+                    <select class="select__header" name="language">
+                        <option value="Pl">Pl</option>
+                        <option disabled value="En">En</option>
+                    </select>
+                </button>
+            </li>
+            <li class="theme__change__item__header">
+                <button type="button" class="sun">
+                    <svg width="14" height="15">
+                        <use fill="fff" href="./src/images/sprite.svg#icon-Sun"></use>
+                    </svg>
+                </button>
+                <button type="button" class="moon">
+                    <svg width="11" height="12">
+                        <use href="./src/images/sprite.svg#icon-Moon"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <h2 class="title">Blog</h2>
+    <section class="blog">
+        <div class="block__blog">
+            <h2 class="title">1. Med Device Online</h2>
+            <p class="text">
+                Med Device Online is a resource for medical device professionals involved in the early phases of medical device and diagnostics development.
+                Med Device Online provides insights and updates on design and development, regulations and compliance, manufacturing, and supply chain in the medical device industry. Med Device Online’s goal is to keep industry professionals and investors well-informed of the latest technological advances and trends in Medical Technology (MedTech), as well as provide professional guidance.
+                Med Device Online provides a free newsletter and e-books. Med Device Online is part of a network of websites where life science companies may submit and pay for the publication of their articles, as well as run content marketing campaigns.
+            </p>
+            <div class="block__info__blog">
+                <img class="blog__img" src="https://simplerqms.com/wp-content/uploads/2024/07/med-device-online-homepage-980x544.png" alt="">
+                <p class="text">Listed below are the 3 top articles of the Med Device Online.</p>
+                <ul class="list__blog">
+                    <li>
+                        <a class="link__blog" href="https://www.meddeviceonline.com/doc/an-overview-of-the-types-of-neuromodulation-devices-0001">An Overview of the 5 Types Of Neuromodulation Devices</a>
+                    </li>
+                    <li>
+                        <a class="link__blog" href="https://www.meddeviceonline.com/doc/what-does-en-iso-s-new-amendment-mean-for-harmonisation-0001">What Does EN ISO 14971:2019’s New Amendment Mean For Harmonization?</a>
+                    </li>
+                    <li>
+                        <a class="link__blog" href="https://www.meddeviceonline.com/doc/medical-device-qms-cybersecurity-threat-modeling-0001">Medical Device QMS Cybersecurity: Threat Modeling</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__blog">
+            <h2 class="title">2. MedTech Intelligence</h2>
+            <p class="text">
+                MedTech Intelligence is a professional community for medical technology professionals focused on improving patient outcomes, increasing access to care, and reducing healthcare costs.  
+                MedTech Intelligence is a source of information on digital health, economics, manufacturing execution, product design and development, quality, and regulatory affairs in the medical technology industry.
+                MedTech Intelligence provides information to medical technology innovators, medical device and diagnostics manufacturers, digital health and patient care providers, and industry regulators.
+                MedTech Intelligence provides free educational resources, such as a library, online events, and webinars. MedTech Intelligence offers paid advertising opportunities to MedTech companies.
+            </p>
+            <div class="block__info__blog">
+                <img class="blog__img" src="https://simplerqms.com/wp-content/uploads/2024/07/medtech-intelligence-homepage-980x496.png" alt="">
+                <p class="text">Listed below are the 3 top articles of the MedTech Intelligence.</p>
+                <ul class="list__blog">
+                    <li>
+                        <a class="link__blog" href="https://medtechintelligence.com/feature_article/state-of-the-art-unpacking-mdrs-evolving-requirements/">State-of-the-Art: Unpacking MDR’s Evolving Requirements</a>
+                    </li>
+                    <li>
+                        <a class="link__blog" href="https://medtechintelligence.com/reduce-your-medical-device-time-to-market-with-cpq-software/">Reduce Your Medical Device Time-to-Market with CPQ Software</a>
+                    </li>
+                    <li>
+                        <a class="link__blog" href="https://medtechintelligence.com/feature_article/from-concept-to-market-the-strategic-journey-from-ind-to-nda/">From Concept to Market: The Strategic Journey from IND to NDA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__blog">
+            <h2 class="title">3. Medical Device and Diagnostic Industry (MD+DI)</h2>
+            <p class="text">
+                MD+DI is a resource for manufacturers of medical devices and in vitro diagnostic products conducting device design and development.
+                MD+DI provides comprehensive topical coverage on product development, manufacturing, regulatory and quality, digital health, and business in the medical device industry. MD+DI offers information to medical technology industry professionals.
+                MD+DI also offers free webinars, online events, and white papers. MD+DI provides a channel for medical device companies to reach active buyers through paid advertisements.
+            </p>
+            <div class="block__info__blog">
+                <img class="blog__img" src="https://simplerqms.com/wp-content/uploads/2024/07/mddi-homepage-980x587.png" alt="">
+                <p class="text">Listed below are the 3 top articles of the MD+DI.</p>
+                <ul class="list__blog">
+                    <li>
+                        <a class="link__blog" href="https://www.mddionline.com/business/top-40-medical-device-companies">Top 40 Medical Device Companies</a>
+                    </li>
+                    <li>
+                        <a class="link__blog" href="https://www.mddionline.com/digital-health/your-smartwatch-cant-measure-blood-glucose-levels-yet">Your Smartwatch Can’t Measure Blood Glucose Levels… Yet</a>
+                    </li>
+                    <li>
+                        <a class="link__blog" href="https://www.mddionline.com/new-technologies/-plan-a-offers-a-new-option-in-male-birth-control">‘Plan A’ Offers a New Option in Male Birth Control</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="block__visa__footer">
+            <p class="text__footer">
+               Jakiekolwiek wykorzystanie lub kopiowanie wybranych materiałów ze strony jest 
+               dozwolone tylko za zgodą właściciela praw autorskich i tylko z powołaniem się na źródło.
+            </p>
+            <div>
+                <span class="span__logoVisa__footer">
+                    <svg width="35" height="27">
+                        <use href="./src/images/sprite.svg#icon-LogoVisa"></use>
+                    </svg>
+                </span>
+                <span>
+                    <svg class="span__visa__footer" width="28" height="9">
+                        <use href="./src/images/sprite.svg#icon-Visa"></use>
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="block__link__footer">
+            <ul class="list__link__footer">
+                <li>
+                    <a class="link__footer" href="./index.html">O nas</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="./index.html">Usługi</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="./index.html">Praca</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="./index.html">Cennik</a>
+                </li>
+            </ul>
+            <div class="block__location__footer">
+                <a class="location__link__footer" href="Lokalizacja">Lokalizacja</a>
+                <a class="location__link__footer" href="Skontaktuj się z nami">Skontaktuj się z nami</a>
+            </div>
+            <ul class="list__socialLink_footer">
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./src/images/sprite.svg#icon-black-Instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./src/images/sprite.svg#icon-black-FaceBook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./src/images/sprite.svg#icon-black-LinkendIn"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./src/images/sprite.svg#icon-black-YouTube"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a class="link__footer" href="POLITYKA PRYWATNOŚCI">Polityka prywatności</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="REGULAMIN">Regulamin</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="PRZYGOTOWANIE DO BADAŃ">Przygotowanie do badań</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="INFORMACJA O PRAWACH PACJENTA">Informacja o prawach pacjenta</a>
+                </li>
+                <li>
+                    <a class="link__footer" href="POLITYKA COOKIE">Polityka cookie</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./src/js/mobile-menu.js"></script>
+    <script src="./src/js/dropdown.js"></script>
+</body>
+</html>
