@@ -413,6 +413,22 @@ color: #fff;
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
+    max-height: 950px;
+    overflow-y: auto;
+}
+
+.price::-webkit-scrollbar {
+    width: 12px;
+}
+
+.price::-webkit-scrollbar-track {
+    background: #f1efe9; 
+}
+
+.price::-webkit-scrollbar-thumb {
+    background-color: #cc8e1e; 
+    border-radius: 6px; 
+    border: 3px solid #f1efe9; 
 }
 
 .block__price {
@@ -966,8 +982,14 @@ width: 380px;
     border-radius: 20px;
     border: 3px #cc8e1e solid;
     padding: 15px;
-    text-align: center;
+    text-align: start;
     width: 320px;
+}
+
+@media (min-width: 1440px) {
+    .modal-inner {
+        width: 360px;
+    }
 }
 
 /* swiper */
